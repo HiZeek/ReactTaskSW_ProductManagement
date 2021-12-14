@@ -8,7 +8,10 @@ import ProductList from './Components/product_list';
 
 const App = () => {
   return(
-    <Header/>
+    <div>
+      <Header/>
+      <ProductList/>
+    </div>
   )
 }
 

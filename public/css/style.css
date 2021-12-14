@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "raleway";
+    font-weight: 400;
+    width: 90%;
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    font-size: 16px;
+}
+
+.navigation_list {
+    text-decoration: none;
+    color: #1D1F22;
+}
+
+.active {
+    text-decoration: none;
+    color: #5ECE7B;
+    border-bottom: 2px solid #5ECE7B;
+    padding-bottom: 15px;
+}
+
+.currency_icon {
+    height: 30px;
+    width: 40px;
+    margin-right: 25px;
+}
+
+.cart_icon {
+    height: 25px;
+    width: 25px;
+}
+
+.logo_icon {
+    height: 25px;
+    width: 25px;
+}
+
+h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.product_section {
+    padding: 50px 0;
+}
+
+.product_list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.product_img {
+    width: 354px;
+    height: 330px;
+}
+
+.product_title {
+    font-size: 18px;
+}
+
+.product_price {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.product_container {
+    position: relative;
+}
+
+.out_of_stock {
+    text-transform: uppercase;
+    font-size: 24px;
+    /* color: #8D8F9A !important; */
+    color: #000000;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-30%, -30%);
+    display: none;
+}
+
+.product_container_out:hover {
+    opacity: 0.5;
+    transition: .5s ease;
+}
+
+.product_container_out:hover .out_of_stock {
+    display: block;
+    transition: .8s ease;
+}
