@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: "raleway";
     font-weight: 400;
@@ -53,6 +57,33 @@ header {
     width: 25px;
 }
 
+.cart_icon_1 {
+    height: 25px;
+    width: 25px;
+}
+
+.cart_icon_1_container {
+    background-color: #5ECE7B;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+    padding: 5px;
+    position: absolute;
+    left: 80%;
+    bottom: 8%;
+    box-shadow: 0px 4px 11px 0px #1D1F221A;
+    display: none;
+    cursor: pointer;
+}
+
+.product_container:hover .cart_icon_1_container {
+    display: block;
+    transition: .5s ease;
+}
+
 .logo_icon {
     height: 25px;
     width: 25px;
@@ -94,7 +125,6 @@ h2 {
 .out_of_stock {
     text-transform: uppercase;
     font-size: 24px;
-    /* color: #8D8F9A !important; */
     color: #000000;
     position: absolute;
     top: 40%;
@@ -111,4 +141,56 @@ h2 {
 .product_container_out:hover .out_of_stock {
     display: block;
     transition: .8s ease;
+}
+
+.sizes {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.size_xs, 
+.size_s, 
+.size_m, 
+.size_l {
+    color: #292929;
+    padding: 10px;
+    border: 1px solid #1D1F22;
+}
+
+.active_size {
+    background-color: #1D1F22;
+    color: #ffffff;
+}
+
+.product_description {
+    padding: 50px 0;
+}
+
+.product_description_headings {
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product_description_price_tag {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.cart_btn {
+    padding: 15px 40px;
+    background-color: #5ECE7B;
+    border: none;
+    font-family: "Raleway";
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product_description_text {
+    font-family: "Roboto";
+    font-weight: 400;
 }

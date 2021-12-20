@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import { Link } from "react-router-dom";
 
 // Images
 import Logo from '../Img/Logo.png';
@@ -15,7 +16,7 @@ const Header = () => {
                     <li><a href='#' className='navigation_list'>Kids</a></li>
                 </ul>
                 <div className='logo'>
-                    <a href='#'><img src={Logo} alt="Logo" className='logo_icon'></img></a>
+                    <Link to="/"><img src={Logo} alt="Logo" className='logo_icon'></img></Link>
                 </div>
                 <div className='purchase'>
                     <a href='#'><img src={Dollar} alt="Currency_Icon" className='currency_icon'></img></a>
